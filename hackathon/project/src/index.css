@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: 'Space Grotesk', sans-serif; color: #e8eef7; background: #07111f; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #07111f; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+.mono { font-family: 'DM Mono', monospace; }
+.grid-bg { background-image: linear-gradient(rgba(72, 117, 153, .08) 1px, transparent 1px), linear-gradient(90deg, rgba(72, 117, 153, .08) 1px, transparent 1px); background-size: 32px 32px; }
+.glow { box-shadow: 0 0 70px rgba(28, 212, 187, .09); }
+.scrollbar::-webkit-scrollbar { width: 5px; height: 5px; }
+.scrollbar::-webkit-scrollbar-thumb { background: #294254; border-radius: 8px; }
+@keyframes pulseLine { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
+.pulse-line { animation: pulseLine 2.5s ease-in-out infinite; }
+@keyframes scan { from { transform: translateY(-110%); } to { transform: translateY(500%); } }
+.scan-line { animation: scan 4s linear infinite; }
